@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="LeftSideNavbar">
+        <div class="LeftSideNavbar-Header">
+            <h1>Calculator</h1>
+            <h2>By Kenneth Serrano</h2>
+        </div>
+    </div>
+
+    <div class="RightSideNavbar">
+        <div class="RightSideNavbar">
+            <h2>Recent Calculations</h2>
+            <div id="History"></div>
+        </div>
+    </div>
+
+    <div class="Main">
+        <div id="ScreenContainer">
+            <header id="Screen"></header>
+        </div>
+
+        <table>
+            <tr>
+                <td class="OperatorButtons" onclick="ClearScreen()">AC</td>
+                <td class="OperatorButtons" onclick="sendNum('-')">+/-</td>
+                <td class="OperatorButtons" onclick="sendNum('*0.01')">%</td>
+                <td class="OperatorButtons" onclick="sendNum('/')">÷</td>
+            </tr>
+            <tr>
+                <td class="Buttons" onclick="sendNum('7')">7</td>
+                <td class="Buttons" onclick="sendNum('8')">8</td>
+                <td class="Buttons" onclick="sendNum('9')">9</td>
+                <td class="OperatorButtons" onclick="sendNum('*')">x</td>
+            </tr>
+            <tr>
+                <td class="Buttons" onclick="sendNum('4')">4</td>
+                <td class="Buttons" onclick="sendNum('5')">5</td>
+                <td class="Buttons" onclick="sendNum('6')">6</td>
+                <td class="OperatorButtons" onclick="sendNum('-')">-</td>
+            </tr>
+            <tr>
+                <td class="Buttons" onclick="sendNum('1')">1</td>
+                <td class="Buttons" onclick="sendNum('2')">2</td>
+                <td class="Buttons" onclick="sendNum('3')">3</td>
+                <td class="OperatorButtons" onclick="sendNum('+')">+</td>
+            </tr>
+            <tr>
+                <td class="Buttons" colspan="2" onclick="sendNum('0')">0</td>
+                <td class="Buttons" onclick="sendNum('.')">.</td>
+                <td class="OperatorButtons" onclick="equalTo()">=</td>
+            </tr>
+        </table>      
+    </div>
+</body>
+
+</html>
