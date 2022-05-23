@@ -71,7 +71,7 @@ function History() {
   }
 }
 
-function ClearHistory(){
+function ClearHistory() {
   var remove = document.getElementById("History");
   remove.parentNode.removeChild(remove);
 }
