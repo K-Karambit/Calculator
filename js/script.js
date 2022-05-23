@@ -49,15 +49,13 @@ function equalTo() {
   document.getElementById("Screen").innerHTML = num1 + "<br>" + ans;
   while (arr.length > 0) {
     arr.pop();
-  }
-
-  History();
+  }  
 
   while (arr.length > 0) {
     arr.pop();
   }
-  num1 = "";
-  num2 = "";
+
+  History();
 }
 
 function History() {
