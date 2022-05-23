@@ -70,3 +70,8 @@ function History() {
     history.removeChild(history.firstChild);
   }
 }
+
+function ClearHistory(){
+  var remove = document.getElementById("History");
+  remove.parentNode.removeChild(remove);
+}
