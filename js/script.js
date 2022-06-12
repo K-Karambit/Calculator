@@ -33,7 +33,7 @@ function LimitChecker() {
 
 function ClearScreen() {
   document.getElementById("Screen").innerHTML = "";
-  while (arr.length > 0) {
+  if (arr.length > 0) {
     arr.pop();
   }
   num1 = "";
